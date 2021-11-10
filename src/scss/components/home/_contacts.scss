@@ -1,20 +1,12 @@
 .contacts {
   padding: 60px 55px;
   @include flex-all-sb;
-  background: var(--color-orange-linear);
-  border: 2px solid var(--color-border);
-  border-radius: $border-radius-20px;
+  background: $gradient;
+  border: 2px solid $color-border;
+  border-radius: $border-cards-radius;
   position: relative;
   overflow: hidden;
   z-index: 0;
-
-  @include mobile {
-    padding: 30px;
-  }
-
-  @include mobile-s {
-    padding: 40px 10px;
-  }
 
   &::before {
     content: "";
@@ -43,28 +35,20 @@
     img {
       position: absolute;
 
-      @include mobile-l {
-        display: none;
-      }
-
+     
       &:first-child {
         max-width: 324px;
         top: 65px;
         left: 0;
 
-        @include tablet {
-          left: -90px;
-        }
+        
       }
 
       &:last-child {
         max-width: 570px;
         bottom: -30px;
         left: 0;
-
-        @include tablet {
-          bottom: -15%;
-        }
+        
       }
     }
   }
