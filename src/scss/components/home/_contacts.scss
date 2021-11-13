@@ -24,7 +24,7 @@
   }
 
   p {
-    font-size: 14px;
+    font-size: $font-text;
   }
 
   &__images {
@@ -35,20 +35,17 @@
     img {
       position: absolute;
 
-     
+
       &:first-child {
         max-width: 324px;
         top: 65px;
         left: 0;
-
-        
       }
 
       &:last-child {
         max-width: 570px;
         bottom: -30px;
         left: 0;
-        
       }
     }
   }
