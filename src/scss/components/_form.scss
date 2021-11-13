@@ -10,8 +10,6 @@
     font-size: $font-text;
   }
 
-  &__body {}
-
   &__item {
     margin: 0 0 16px 0;
     display: block;
@@ -40,7 +38,7 @@
   }
 
 
-  &__button  {
+  &__button {
     width: 100%;
 
     &:hover {
