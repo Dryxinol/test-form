@@ -1,4 +1,4 @@
-<div class="contact-form">
+<div class="form">
   <h2>
     Свяжитесь с нами
   </h2>
@@ -6,59 +6,23 @@
   <p>
     Мы готовы ответить на все ваши вопросы или сразу предложить вам объект, который вас заинтересует.
   </p>
-
-  <form class="form" action="#" method="get">
-
-    <label class="form__label">
-      <span class="sr-only">
-        Имя
-      </span>
-
-      <input class="form__area" name="name" data-target="name" type="text" placeholder="Имя">
-
-      <span class="form__error">Введите Имя</span>
-    </label>
-
-    <label class="form__label">
-      <span class="sr-only">
-        Електронная почта
-      </span>
-      <input class="form__area" name="email" data-target="email" type="email" placeholder="Email">
-
-      <span class="form__error">Введите Email</span>
-    </label>
-
-    <label class="form__label">
-      <span class="sr-only">
-        Телефон
-      </span>
-      <input class="form__area" name="phone" data-target="tel" type="tel">
-
-      <span class="form__error">Введите телефон</span>
-    </label>
-
-    <label class="form__label">
-      <span class="sr-only">
-        Сообщение
-      </span>
-
-      <textarea class="form__area form__area--text" name="message" placeholder="Сообщение"></textarea>
-    </label>
-
-    <label class="form__label custom-checkbox">
-      <input class="form__area custom-checkbox__field" name="checkbox" type="checkbox" data-target="ckeck">
-
-      <span class="custom-checkbox__content">Я соглашаюсь с обработкой моих персональных данных</span>
-
-      <span class="form__error custom-checkbox__error">
-        Вы не согласились на обработку персональных данных
-      </span>
-
-    </label>
-
-    <button class="form__btn btn " type="submit" data-path="modal-finish">
-      Отправить
-    </button>
-
+  <form action="#" id="form" class="form__body">
+    <div class="form__item">
+      <label class="form__label" for="formName">Имя</label>
+      <input class="form__input" id="formName" name="name" type="text">
+    </div>
+    <div class="form__item">
+      <label class="form__label" for="formEmail">Email</label>
+      <input class="form__input" id="formEmail" name="email" type="text">
+    </div>
+    <div class="form__item">
+      <label class="form__label" for="formPhone">Телефон</label>
+      <input class="form__input" id="formPhone" name="tel" type="text">
+    </div>
+    <div class="form__item">
+      <label class="form__label" for="formMessage">Сообщение</label>
+      <textarea class="form__input" name="message" id="formMessage"></textarea>
+    </div>
+    <button class="form__button" type="submit">Отправить</button>
   </form>
 </div>
