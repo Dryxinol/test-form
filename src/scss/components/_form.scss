@@ -16,27 +16,27 @@
     transition: margin-bottom 0.3s linear;
   }
 
-  &__input,
-  &__area {
-    width: 100%;
-    padding: 15px;
-    border-radius: $border-form-radius;
-    border: 1px solid $gray-100;
-    font-size: $font-text;
-    line-height: $lh-text;
-    color: $gray-500;
-    box-shadow: none !important;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none
-  }
+  // &__input,
+  // &__area {
+  //   width: 100%;
+  //   padding: 15px;
+  //   border-radius: $border-form-radius;
+  //   border: 1px solid $gray-100;
+  //   font-size: $font-text;
+  //   line-height: $lh-text;
+  //   color: $gray-500;
+  //   box-shadow: none !important;
+  //   -webkit-appearance: none;
+  //   -moz-appearance: none;
+  //   appearance: none
+  // }
 
-  &__area {
+  .textarea {
     min-height: 150px;
   }
 
 
-  &__button .btn{
+  &__button {
     width: 100%;
 
     &:hover {
